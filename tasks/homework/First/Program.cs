@@ -19,22 +19,3 @@ else
     max = b;
     Console.Write($"Максимальное число = {max}");    
 }
-
-// Console.WriteLine("Введите трехзначное число: ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// if (a >= 100 && a < 1000)
-// {
-//     Console.WriteLine($"Последняя цифра числа {a}={a % 10}");
-// }
-// else
-//     Console.WriteLine("Вы ввели не трезхначное число, повторите попытку");
-
-// int a;
-// do
-// {
-//     Console.WriteLine("Введите трехзначное число: ");
-//     a = Convert.ToInt32(Console.ReadLine());
-// } while (a <= 99 || a > 999);
-// Console.WriteLine($"Последняя цифра числа {a}={a % 10}");
-
-
