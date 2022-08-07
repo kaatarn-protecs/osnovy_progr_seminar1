@@ -5,11 +5,11 @@
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int count = 1;
+int count = 0;
 
 if (num > 0) 
 {
-    while (count != num) 
+    while (count != num+1) 
     {
         if (count % 2 == 0) 
         {
@@ -18,7 +18,11 @@ if (num > 0)
         count++;
     }
 }
-else
+else if (num < 0)
 {
-    Console.Write($"Число {num}, является отрицательным! Это создаст переполнение! Введите положительное число от 0 .. ..");   
+    Console.Write($"Число {num}, является отрицательным! Это создаст переполнение! Перезапустите программу и введите положительное число");
+}
+else if (num == 0) 
+{
+    Console.Write($"Введенное число равно 0!");   
 }
